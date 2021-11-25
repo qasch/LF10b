@@ -3,13 +3,14 @@ version: '3'
 services:
   webserver:
     image: php:apache
-    ports: # TODO
+    ports: 
+      - '80:80'
     volumes:
       - ./website:/var/www/html
 
-  python:
-    image: python
-    ports: # TODO
-    volumes:
-      - # TODO
+        #  python:
+        #    image: python
+        #    ports: # TODO
+        #    volumes:
+        #      - # TODO
 
