@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  webserver:
+    image: php:apache
+    ports: # TODO
+    volumes:
+      - ./website:/var/www/html
+
+  python:
+    image: python
+    ports: # TODO
+    volumes:
+      - # TODO
+
