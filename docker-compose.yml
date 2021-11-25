@@ -14,7 +14,7 @@ services:
     # das Dockerfile zum Bauen des Images befindet
     build: python-flask
     ports: 
-      - '9999:80'
+      - '8080:80'
     volumes:
       - ./python-flask:/usr/src/app
 

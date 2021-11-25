@@ -9,6 +9,7 @@ class Service(Resource):
         return {
             'services': [
                     'Docker',
+                    'Debuggen',
                     'Yaml',
                     'Kaffe kochen'
                     ]
