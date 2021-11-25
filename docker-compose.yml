@@ -1,16 +1,22 @@
-version: '3'
+version: '3.7'
 
 services:
   webserver:
+    # Angabe des Images
     image: php:apache
     ports: 
       - '80:80'
     volumes:
       - ./website:/var/www/html
 
-        #  python:
-        #    image: python
-        #    ports: # TODO
-        #    volumes:
-        #      - # TODO
+  python-service:
+    # Angabe des Verzeichnisses, in dem sich
+    # das Dockerfile zum Bauen des Images befindet
+    build: python-flask
+    ports: 
+      - '9999:80'
+    volumes:
+      - ./python-flask:/usr/src/app
+
+
 
